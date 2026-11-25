@@ -48,3 +48,29 @@
   height: 180px;
   object-fit: cover;
 }
+/* Triangle personnalisé */
+.accordeon > details > summary {
+  position: relative;
+  list-style: none;
+}
+
+.accordeon > details > summary::marker,
+.accordeon > details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordeon > details > summary::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+  border-top: 10px solid #333;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  transition: transform 0.2s ease;
+}
+
+.accordeon > details[open] > summary::before {
+  transform: rotate(180deg);
+}
