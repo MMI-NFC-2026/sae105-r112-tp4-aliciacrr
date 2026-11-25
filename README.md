@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Carriero 
+- prénom : Alicia 
+- URL Netlify : https://melodic-frangollo-b66b65.netlify.app/
 
 # Travail
 
