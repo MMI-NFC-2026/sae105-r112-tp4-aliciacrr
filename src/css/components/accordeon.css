@@ -1,3 +1,35 @@
 /**
-* Accordeon
-*/
+ * Accordéon — styles de base
+ */
+
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordeon details {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordeon summary {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+.accordeon details[open] > summary {
+  background-color: #d9eaff;
+}
+
+.accordeon details > div {
+  padding: 1rem;
+}
+
+.accordeon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
